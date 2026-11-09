@@ -3,213 +3,133 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Adi Abdul Rozaq – Software Developer</title>
-<meta name="description" content="CV online Adi Abdul Rozaq, lulusan S1 Teknik Informatika yang berfokus pada Web Programmer, Backend Developer, dan Software Developer.">
-<meta property="og:title" content="Adi Abdul Rozaq – Software Developer">
-<meta property="og:description" content="Lulusan S1 Teknik Informatika. Web, backend, dan aplikasi seluler.">
+<title>Adi Abdul Rozaq – Web &amp; App Developer | Software Engineer</title>
+<meta name="description" content="CV online Adi Abdul Rozaq, Web & App Developer | Software Engineer. Lulusan S1 Teknik Informatika Universitas Muhammadiyah Purwokerto.">
+<meta property="og:title" content="Adi Abdul Rozaq – Web & App Developer | Software Engineer">
 <meta property="og:type" content="profile">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👨‍💻</text></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
-:root{
-  --bg:#F3F6F6; --surface:#FFFFFF; --ink:#0F1F27; --muted:#506068; --line:#CFD9DC;
-  --accent:#0B6E66; --accent-ink:#FFFFFF; --accent-soft:#DDEFEC;
-  --display:"Bricolage Grotesque","Segoe UI",system-ui,sans-serif;
-  --body:"IBM Plex Sans","Segoe UI",system-ui,-apple-system,sans-serif;
-  box-sizing:border-box;
+*,*::before,*::after{box-sizing:border-box}
+html{font-size:14px;-webkit-text-size-adjust:100%}
+@media (min-width:768px){html{font-size:15px}}
+body{margin:0;background:#fff;color:#111;font-family:"Poppins","Segoe UI",Arial,sans-serif;font-weight:400;line-height:1.75}
+a{color:inherit;text-decoration:none}
+a:hover{text-decoration:underline}
+a:focus-visible{outline:2px solid #111;outline-offset:2px}
+
+.page{max-width:820px;margin:0 auto;padding:3.5rem 1.5rem 2.5rem}
+
+header{text-align:center;margin-bottom:2.25rem}
+h1{margin:0 0 .35rem;font-size:clamp(1.55rem,6.5vw,2.1rem);font-weight:700;letter-spacing:.12em;line-height:1.25}
+.role{margin:0 0 .6rem;font-size:1rem;font-weight:500;letter-spacing:.02em}
+.contact{margin:0;font-size:.93rem;line-height:1.7;overflow-wrap:anywhere}
+
+h2{margin:1.9rem 0 .7rem;padding-bottom:.4rem;border-bottom:2px solid #111;font-size:1.2rem;font-weight:700;line-height:1.35}
+p,li{text-align:justify;text-justify:inter-word;hyphens:auto;-webkit-hyphens:auto;overflow-wrap:break-word}
+p{margin:0}
+.sub{margin:.55rem 0 .15rem;color:#555;font-weight:600;text-align:left;hyphens:none}
+ul{margin:.3rem 0 0;padding-left:1.4rem}
+li{margin:.2rem 0;padding-left:.15rem}
+li strong{font-weight:600}
+
+footer{margin-top:2.5rem;color:#555;font-size:.85rem;text-align:center}
+
+@media (max-width:480px){
+  .page{padding:2.25rem 1.1rem 2rem}
+  h2{margin-top:1.6rem}
+  ul{padding-left:1.2rem}
 }
-@media (prefers-color-scheme:dark){
-  :root:not([data-theme="light"]){
-    --bg:#0D171B; --surface:#14232A; --ink:#E7EFF1; --muted:#9DB0B7; --line:#26393F;
-    --accent:#4FD1C0; --accent-ink:#06211E; --accent-soft:#16363A;
-  }
-}
-:root[data-theme="dark"]{
-  --bg:#0D171B; --surface:#14232A; --ink:#E7EFF1; --muted:#9DB0B7; --line:#26393F;
-  --accent:#4FD1C0; --accent-ink:#06211E; --accent-soft:#16363A;
-}
-*,*::before,*::after{box-sizing:inherit}
-html{scroll-behavior:smooth}
-body{margin:0;background:var(--bg);color:var(--ink);font:400 1rem/1.65 var(--body);-webkit-font-smoothing:antialiased}
-a{color:var(--accent);text-underline-offset:3px}
-a:focus-visible,button:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:4px}
-.wrap{max-width:860px;margin:0 auto;padding:0 1.25rem}
-
-/* Hero */
-header.hero{padding:4.5rem 0 3rem}
-.hero h1{font:700 clamp(2.8rem,9vw,5.6rem)/.95 var(--display);letter-spacing:-.03em;margin:0 0 1rem}
-.hero .role{font:500 clamp(1.1rem,2.6vw,1.45rem)/1.3 var(--display);color:var(--accent);margin:0 0 1.5rem}
-.hero .lead{max-width:62ch;color:var(--muted);margin:0 0 2rem}
-.actions{display:flex;flex-wrap:wrap;gap:.75rem;margin-bottom:1.75rem}
-.btn{display:inline-flex;align-items:center;min-height:44px;padding:.55rem 1.1rem;border-radius:8px;font-weight:600;text-decoration:none;border:1.5px solid var(--accent);transition:background .15s,color .15s}
-.btn.primary{background:var(--accent);color:var(--accent-ink)}
-.btn.primary:hover{filter:brightness(1.08)}
-.btn.ghost{color:var(--accent);background:transparent}
-.btn.ghost:hover{background:var(--accent-soft)}
-.contact{display:flex;flex-wrap:wrap;gap:.35rem 1.75rem;margin:0;padding:0;list-style:none;color:var(--muted);font-size:.95rem}
-.theme{position:absolute;top:1rem;right:1rem;min-width:44px;min-height:44px;border-radius:50%;border:1.5px solid var(--line);background:var(--surface);color:var(--ink);cursor:pointer;font-size:1.1rem}
-
-/* Sections */
-section{padding:2.5rem 0;border-top:1.5px solid var(--line)}
-h2{font:700 1.6rem/1.2 var(--display);letter-spacing:-.01em;margin:0 0 1.5rem}
-h3{font:600 1.1rem/1.35 var(--display);margin:0}
-.meta{color:var(--muted);font-size:.92rem;margin:.15rem 0 .6rem}
-ul.plain{margin:.5rem 0 0;padding-left:1.15rem}
-ul.plain li{margin:.35rem 0;max-width:68ch}
-.stat{font-weight:600;color:var(--accent)}
-
-/* Timeline (urutan nyata → pakai garis seperti git graph) */
-.timeline{position:relative;margin:0;padding:0 0 0 2rem;list-style:none}
-.timeline::before{content:"";position:absolute;left:7px;top:.6rem;bottom:.6rem;width:2px;background:var(--line)}
-.timeline>li{position:relative;padding-bottom:2.25rem}
-.timeline>li:last-child{padding-bottom:0}
-.timeline>li::before{content:"";position:absolute;left:-2rem;top:.45rem;width:16px;height:16px;border-radius:50%;background:var(--bg);border:3px solid var(--accent)}
-.timeline>li.now::before{background:var(--accent)}
-.tag{display:inline-block;font-size:.8rem;font-weight:600;padding:.1rem .6rem;border-radius:99px;background:var(--accent-soft);color:var(--accent);margin-left:.4rem;vertical-align:middle}
-
-/* Skills */
-dl.skills{display:grid;grid-template-columns:max-content 1fr;gap:.9rem 1.75rem;margin:0}
-dl.skills dt{font-weight:600}
-dl.skills dd{margin:0;color:var(--muted)}
-.chips{display:flex;flex-wrap:wrap;gap:.45rem}
-.chips span{padding:.2rem .7rem;border:1.5px solid var(--line);border-radius:6px;background:var(--surface);color:var(--ink);font-size:.92rem}
-
-.grid2{display:grid;grid-template-columns:1fr 1fr;gap:2rem}
-footer{padding:2rem 0 3rem;border-top:1.5px solid var(--line);color:var(--muted);font-size:.9rem}
-
-@media (max-width:640px){
-  header.hero{padding-top:4rem}
-  dl.skills{grid-template-columns:1fr;gap:.35rem}
-  dl.skills dd{margin-bottom:.7rem}
-  .grid2{grid-template-columns:1fr}
-}
-@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
 @media print{
-  :root{--bg:#fff;--surface:#fff;--ink:#000;--muted:#333;--line:#bbb;--accent:#0B6E66}
-  .theme,.actions{display:none}
-  header.hero{padding:0 0 1rem}section{padding:1rem 0;break-inside:avoid}
+  .page{padding:0}footer{display:none}
+  h2{break-after:avoid}li{break-inside:avoid}
 }
 </style>
 </head>
 <body>
-<button class="theme" id="theme" type="button" aria-label="Ganti tema terang/gelap">◐</button>
+<div class="page">
 
-<header class="hero">
-  <div class="wrap">
-    <h1>Adi Abdul Rozaq</h1>
-    <p class="role">Software Developer · Web Programmer · Backend Developer</p>
-    <p class="lead">Lulusan S1 Teknik Informatika yang membangun aplikasi web dan seluler, dari perencanaan sampai implementasi, dengan kode yang efisien, terstruktur, dan mudah dikembangkan.</p>
-    <div class="actions">
-      <a class="btn primary" href="mailto:adiabdulrozaq15@gmail.com">Kirim email</a>
-      <a class="btn ghost" href="https://www.linkedin.com/in/adi-abdul-rozaq-a711b9367" target="_blank" rel="noopener">Buka LinkedIn</a>
-      <a class="btn ghost" href="CV_Adi_Abdul_Rozaq.pdf" download>Unduh CV (PDF)</a>
-    </div>
-    <ul class="contact">
-      <li><a href="https://wa.me/6288232893925" target="_blank" rel="noopener">+62 882-3289-3925</a></li>
-      <li><a href="mailto:adiabdulrozaq15@gmail.com">adiabdulrozaq15@gmail.com</a></li>
-      <li>Sokayasa, Banjarnegara, Jawa Tengah</li>
-    </ul>
-  </div>
+<header>
+  <h1>Adi Abdul Rozaq</h1>
+  <p class="role" style="text-align:center">Web &amp; App Developer | Software Engineer</p>
+  <p class="contact" style="text-align:center"><a href="https://wa.me/6288232893925" target="_blank" rel="noopener">+6288232893925</a> | <a href="mailto:adiabdulrozaq15@gmail.com">adiabdulrozaq15@gmail.com</a></p>
+  <p class="contact" style="text-align:center"><a href="https://www.linkedin.com/in/adi-abdul-rozaq-a711b9367" target="_blank" rel="noopener">www.linkedin.com/in/adi-abdul-rozaq-a711b9367</a> | Sokayasa, Banjarnegara, Jawa Tengah</p>
 </header>
 
-<main class="wrap">
+<main>
 
-<section id="tentang">
-  <h2>Tentang saya</h2>
-  <p style="max-width:68ch;margin:0">Lulusan S1 Teknik Informatika dengan kemampuan pengembangan perangkat lunak, pemrograman, serta desain sistem berbasis web dan seluler. Berpengalaman membangun aplikasi mulai dari tahap perencanaan dan pengembangan hingga implementasi, dengan menerapkan konsep pemrograman berorientasi objek (OOP) dan integrasi basis data. Mampu memecahkan masalah teknis secara logis dan sistematis, serta bersemangat mengembangkan solusi teknologi yang inovatif dan scalable.</p>
+<section>
+  <h2>Tentang Saya</h2>
+  <p>Lulusan S1 Teknik Informatika dengan kemampuan pengembangan perangkat lunak, pemrograman, serta desain sistem berbasis web dan seluler. Berpengalaman dalam membangun aplikasi mulai dari tahap perencanaan dan pengembangan hingga implementasi, dengan menerapkan konsep pemrograman berorientasi objek (OOP) dan integrasi basis data. Mahir dalam menulis kode yang efisien, terstruktur, dan mudah dikembangkan, serta mampu memecahkan masalah teknis secara logis dan sistematis. Bersemangat untuk mengembangkan solusi teknologi yang inovatif dan scalable, serta terus meningkatkan kemampuan dalam bidang pemrograman, khususnya sebagai Software Developer, Web Programmer, atau Backend Developer.</p>
 </section>
 
-<section id="pendidikan">
+<section>
   <h2>Pendidikan</h2>
-  <h3>Universitas Muhammadiyah Purwokerto</h3>
-  <p class="meta">S1 Teknik Informatika · 2021 – 2025 · IPK 3,59 / 4,00</p>
-  <ul class="plain">
-    <li>Mempelajari mata kuliah Pemrograman Dasar, Pemrograman Web, Pemrograman Berbasis Framework, Pemrograman Aplikasi Mobile, dan Sistem Operasi.</li>
+  <p class="sub">2021 - 2025 | Universitas Muhammadiyah Purwokerto | S1 Teknik Informatika</p>
+  <p class="sub" style="margin-top:0">IPK 3.59/4.00</p>
+  <ul>
+    <li>Mempelajari mata kuliah seperti: Pemrograman Dasar, Pemrograman Web, Pemrograman Berbasis Framework, Pemrograman Aplikasi Mobile, Sistem Operasi.</li>
     <li>Mempelajari konsep inti seperti algoritma dan struktur data, basis data, serta pemrograman berorientasi objek (OOP).</li>
     <li>Mendalami berbagai bahasa pemrograman: PHP, JavaScript, Python, serta pengembangan React Native.</li>
     <li>Memahami konsep jaringan komputer, keamanan siber, dan manajemen basis data.</li>
   </ul>
 </section>
 
-<section id="pengalaman">
-  <h2>Pengalaman kerja</h2>
-  <ol class="timeline">
-    <li class="now">
-      <h3>Magang Nasional Kemnaker <span class="tag">Terbaru</span></h3>
-      <p class="meta">Biro Perencanaan, Kementerian Kelautan dan Perikanan · November 2025 – Mei 2026</p>
-      <ul class="plain">
-        <li>Mengembangkan Sistem Dashboard Program Prioritas Presiden.</li>
-        <li>Mengembangkan Sistem Survei &amp; Analitik KNMP yang mengintegrasikan pengumpulan data berbasis kuesioner dengan dasbor analitis, untuk analisis <span class="stat">1.269 lokasi kandidat di 37 provinsi</span>, dengan data lapangan yang lebih terstruktur dan akurat.</li>
-        <li>Mengembangkan Sistem Pemantauan Zona Integritas (WBK) untuk melacak indikator tata kelola, meningkatkan transparansi proses, serta mendukung akuntabilitas dan kepatuhan.</li>
-        <li>Membuat Sistem Budidaya Tematik: sistem informasi web untuk pendataan, monitoring progres, dan survei terintegrasi lokasi program budidaya di berbagai wilayah/desa.</li>
-      </ul>
-    </li>
-    <li>
-      <h3>Full Stack Programmer</h3>
-      <p class="meta">Freelance · November 2025</p>
-      <ul class="plain">
-        <li>Merancang dan membangun platform e-commerce secara menyeluruh, dengan alur transaksi digital dan manajemen operasional toko real-time.</li>
-        <li>Memakai Vue.js + Tailwind CSS untuk antarmuka yang responsif, dan Golang di backend untuk performa API yang cepat dan handal.</li>
-      </ul>
-    </li>
-    <li>
-      <h3>Magang</h3>
-      <p class="meta">Sekretariat Daerah Kabupaten Banjarnegara · Januari 2025 – Oktober 2025</p>
-      <ul class="plain">
-        <li>Membantu pendampingan penanganan aplikasi e-SAKIP berbasis website.</li>
-        <li>Memastikan situs web berjalan optimal dan memperbarui konten.</li>
-        <li>Menganalisis dan memperbaiki masalah atau kekurangan aplikasi.</li>
-        <li>Mengomunikasikan kebutuhan perubahan ke tim dan meninjau hasil implementasi.</li>
-      </ul>
-    </li>
-  </ol>
+<section>
+  <h2>Pengalaman Kerja</h2>
+
+  <p class="sub">Januari 2025 - Oktober 2025 | Magang | Sekretariat Daerah Kabupaten Banjarnegara</p>
+  <ul>
+    <li>Bertanggung jawab membantu pendampingan terhadap penanganan aplikasi e-SAKIP berbasis website.</li>
+    <li>Manajemen Aplikasi - Memastikan situs web berjalan secara optimal dan memperbarui konten.</li>
+    <li>Menangani Keluhan Aplikasi - Menganalisis dan memperbaiki masalah atau kekurangan aplikasi.</li>
+    <li>Koordinasi dengan Team - Mengkomunikasikan kebutuhan perubahan dan meninjau hasil implementasi.</li>
+  </ul>
+
+  <p class="sub" style="margin-top:1.1rem">November 2025 - November 2025 | Freelance | Full Stack Programmer</p>
+  <ul>
+    <li>Pengembangan Website E-Commerce: Merancang dan membangun platform e-commerce secara menyeluruh dengan alur transaksi digital dan manajemen operasional toko real-time.</li>
+    <li>Tech Stack &amp; Integrasi: Menggunakan Vue.js + Tailwind CSS untuk antarmuka pengguna yang responsif serta Golang pada backend untuk performa API yang cepat dan handal.</li>
+  </ul>
+
+  <p class="sub" style="margin-top:1.1rem">November 2025 - Mei 2026 | Magang Nasional Kemnaker | Biro Perencanaan, Kementerian Kelautan dan Perikanan</p>
+  <ul>
+    <li>Mengembangkan Sistem Dashboard Program Prioritas Presiden.</li>
+    <li>Mengembangkan Sistem Survei &amp; Analitik KNMP, mengintegrasikan pengumpulan data berbasis kuesioner dengan dasbor analitis, memungkinkan pengumpulan data terstruktur dari lapangan, meningkatkan akurasi data, dan mendukung analisis komprehensif dari 1.269 lokasi kandidat di 37 provinsi.</li>
+    <li>Mengembangkan Sistem Pemantauan Zona Integritas (WBK), memungkinkan pelacakan indikator tata kelola yang terstruktur, meningkatkan transparansi proses, dan mendukung akuntabilitas dan kepatuhan dalam alur kerja organisasi.</li>
+    <li>Membuat Sistem Budidaya Tematik, Sistem informasi berbasis web yang dirancang untuk pendataan, monitoring progres, dan survei terintegrasi terkait lokasi program budidaya di berbagai wilayah/desa.</li>
+  </ul>
 </section>
 
-<section id="sertifikasi">
+<section>
   <h2>Sertifikasi</h2>
-  <ul class="plain" style="margin-top:0">
-    <li>BNSP – Programmer, LSP Universitas Muhammadiyah Purwokerto</li>
-    <li>BNSP – Assistant Web Developer, LSP BBPVP Bekasi</li>
-    <li>Certificate of English Proficiency, Language Development Center (LDC) UMP</li>
-    <li>TOEFL Prediction Test, Brighten English (skor 527, berlaku hingga Oktober 2027)</li>
+  <ul>
+    <li>BNSP - Programmer - LSP Universitas Muhammadiyah Purwokerto</li>
+    <li>BNSP - Assistant Web Developer - LSP BBPVP Bekasi</li>
+    <li>Certificate of English Proficiency - Language Development Center (LDC) UMP</li>
+    <li>TOEFL Prediction Test – Brighten English (Skor: 527) | Berlaku hingga Okt 2027</li>
     <li>Sertifikat Magang Nasional Kemnaker</li>
   </ul>
 </section>
 
-<section id="keterampilan">
+<section>
   <h2>Keterampilan dan Informasi Tambahan</h2>
-  <dl class="skills">
-    <dt>Frontend</dt><dd><div class="chips"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>TypeScript</span><span>Vue.js</span><span>Bootstrap</span><span>Tailwind CSS</span></div></dd>
-    <dt>Backend</dt><dd><div class="chips"><span>PHP (Native, Laravel, CodeIgniter)</span><span>Python</span><span>C#</span><span>Golang</span></div></dd>
-    <dt>Mobile</dt><dd><div class="chips"><span>React Native</span><span>Android Studio</span></div></dd>
-    <dt>Database &amp; API</dt><dd><div class="chips"><span>MySQL</span><span>Firebase</span><span>REST API</span><span>Integrasi API</span><span>HeidiSQL</span><span>Navicat</span></div></dd>
-    <dt>Tools &amp; metodologi</dt><dd><div class="chips"><span>VSCode</span><span>Postman</span><span>Trello</span><span>Jira</span><span>GitHub</span><span>Agile</span><span>Microsoft Office</span></div></dd>
-    <dt>Soft skills</dt><dd>Teliti, efisien, kerja tim, adaptif, manajemen waktu, berpikir kritis dan pemecahan masalah.</dd>
-    <dt>Minat</dt><dd>Pengembangan web dan aplikasi mobile, database management dan keamanan sistem, desain UI/UX (Figma &amp; Canva).</dd>
-  </dl>
+  <ul>
+    <li><strong>Frontend:</strong> HTML, CSS, JavaScript, TypeScript, Vue.js, Bootstrap, Tailwind CSS</li>
+    <li><strong>Backend:</strong> PHP (Native, Laravel, CodeIgniter), Python, C#, Golang</li>
+    <li><strong>Mobile Development:</strong> React Native, Android Studio</li>
+    <li><strong>Database &amp; API:</strong> MySQL, Firebase, REST API, Integrasi API, HeidiSQL, Navicat</li>
+    <li><strong>Tools &amp; Metodologi:</strong> VSCode, Postman, Trello, Jira, Github, Agile, Microsoft Office</li>
+    <li><strong>Soft Skills:</strong> Teliti, Efisiensi, Kerja Tim, Adaptif, Manajemen Waktu, Berpikir Kritis &amp; Pemecahan Masalah</li>
+    <li><strong>Minat:</strong> Pengembangan Web, Pengembangan Aplikasi Mobile, Database Management &amp; Keamanan Sistem, Desain UI/UX (Figma &amp; Canva)</li>
+  </ul>
 </section>
 
 </main>
 
-<footer>
-  <div class="wrap">© <span id="year">2026</span> Adi Abdul Rozaq</div>
-</footer>
+<footer><a href="CV_Adi_Abdul_Rozaq.pdf" download>Unduh CV (PDF)</a></footer>
 
-<script>
-document.getElementById("year").textContent = new Date().getFullYear();
-(function(){
-  var root = document.documentElement, btn = document.getElementById("theme");
-  try { var saved = localStorage.getItem("theme"); if (saved) root.setAttribute("data-theme", saved); } catch(e){}
-  btn.addEventListener("click", function(){
-    var dark = root.getAttribute("data-theme") === "dark" ||
-      (!root.getAttribute("data-theme") && matchMedia("(prefers-color-scheme: dark)").matches);
-    var next = dark ? "light" : "dark";
-    root.setAttribute("data-theme", next);
-    try { localStorage.setItem("theme", next); } catch(e){}
-  });
-})();
-</script>
+</div>
 </body>
 </html>
